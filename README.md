@@ -4,5 +4,4 @@
 
 Note: For gym, check the [doc](https://gym.openai.com/docs/)
       
-      
-      For colab, checkout [this](https://medium.com/deep-learning-turkey/google-colab-free-gpu-tutorial-e113627b9f5d)
+Note: For colab, checkout [this](https://medium.com/deep-learning-turkey/google-colab-free-gpu-tutorial-e113627b9f5d)
