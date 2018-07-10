@@ -1,6 +1,7 @@
 # Practical-RL
 
 1. [gym_intro](https://colab.research.google.com/drive/1AsFzJDEI9OtlmGHyuqr21iMLKy4OgAMg)
+2. [Actor-Critic](https://colab.research.google.com/drive/1-TiI1dNIQDukkQC1PXy7mhDT883j9ua9)
 
 Note: For gym, check the [doc](https://gym.openai.com/docs/)
       
