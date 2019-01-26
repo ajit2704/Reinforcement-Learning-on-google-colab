@@ -13,8 +13,23 @@ Motive of this blog will be to use gym & gym[atari] on colab. For Deep Learning 
 
 Most of the requirements of python packages are already fulfilled on colab. To run gym, 1st you have to install prerequisites like xvbf,opengl & other python-dev packages:
 
-```!apt-get install -y python-numpy python-dev cmake zlib1g-dev libjpeg- dev xvfb libav-tools xorg-dev python-opengl libboost-all-dev libsdl2-dev swig```
+```
+!apt-get install -y python-numpy python-dev cmake zlib1g-dev libjpeg- dev xvfb libav-tools xorg-dev python-opengl libboost-all-dev libsdl2-dev swig
+```
 
+![](https://github.com/ajit2704/Practical-Reinforcement-Learning-With-Colab/blob/master/1_yqDjbLhneoEAyL8Lbwj43w.png)
+
+Now for rendering environment I prefer to use pyvirtualdisplay, so to fulfill that:
+
+```
+   !pip install pyvirtualdisplay
+   !pip install piglet
+```
+
+![](https://github.com/ajit2704/Practical-Reinforcement-Learning-With-Colab/blob/master/1_s4eFRgsGnHWmJWzgAe52Lg.png)
+
+To activate virtual display we need to run a script once for training an agent, as follows:
+<script src="https://gist.github.com/ajit2704/841625e9d5a38092e97948d20d7f1a98.js"></script>
 
 Note: For gym, check the [doc](https://gym.openai.com/docs/)
       
