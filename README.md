@@ -7,6 +7,7 @@
 3. [qlearning](https://colab.research.google.com/drive/1nDO-XfgkAgABCe2jYNAFwmi4plr2xJoc)
 4. [Actor-Critic](https://colab.research.google.com/drive/1-TiI1dNIQDukkQC1PXy7mhDT883j9ua9)
 
+# Guide to follow
 Google Colaboratory provides that 12GB GPU support with continuous 12 hr runtime. For RL it requires to render the environment visuals. Here is sort of a tutorial to get over that issue & continue free coding.
 
 Motive of this blog will be to use gym & gym[atari] on colab. For Deep Learning & other setup you may want to refer this article, it will also give you the basic understanding.
@@ -29,8 +30,20 @@ Now for rendering environment I prefer to use pyvirtualdisplay, so to fulfill th
 ![](https://github.com/ajit2704/Practical-Reinforcement-Learning-With-Colab/blob/master/1_s4eFRgsGnHWmJWzgAe52Lg.png)
 
 To activate virtual display we need to run a script once for training an agent, as follows:
-<script src="https://gist.github.com/ajit2704/841625e9d5a38092e97948d20d7f1a98.js"></script>
 
-Note: For gym, check the [doc](https://gym.openai.com/docs/)
-      
-Note: For colab, checkout [this](https://medium.com/deep-learning-turkey/google-colab-free-gpu-tutorial-e113627b9f5d)
+```python
+from pyvirtualdisplay import Display
+display = Display(visible=0, size=(1400, 900))
+display.start()
+```
+
+Moving on to gym requirements, gym is already installed but not with atari game environments, to get that:
+
+```
+!pip install gym
+!pip install “gym[atari]"
+```
+
+# References
+ 1. For gym, check the https://gym.openai.com/docs/
+ 2. For colab, checkout https://medium.com/deep-learning-turkey/google-colab-free-gpu-tutorial-e113627b9f5d
